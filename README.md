@@ -33,8 +33,8 @@ Natalie
 
 4. Creating some way to show the results
 
-5. Making the Presentation 
-
+5. Making the Presentation:
+Meredith
 6. I am assuming we will all presesnt unless one of us can't be there:
 Natalie
 
