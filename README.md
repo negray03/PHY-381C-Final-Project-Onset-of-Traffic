@@ -27,7 +27,7 @@ These are things that I forsee needing to be done, but feel free to add some to 
 
 1. Creating the project READme (not this one the real one)
 
-2. Implementing the basic level of code (1 lane of traffic)
+2. Implementing the basic level of code (1 lane of traffic):
 Natalie
 3. Implementing the multiple lanes
 
@@ -35,7 +35,7 @@ Natalie
 
 5. Making the Presentation 
 
-6. I am assuming we will all presesnt unless one of us can't be there
+6. I am assuming we will all presesnt unless one of us can't be there:
 Natalie
 
 
