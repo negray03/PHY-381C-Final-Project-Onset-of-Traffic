@@ -57,7 +57,7 @@ Inhyeok
 Judah
 7. Making the Presentation:
 Meredith, Emma
-8. I am assuming we will all presesnt unless we can't be there:
+8. We will all presesnt unless we can't be there:
 Natalie, Emma, Meredith, Inhyeok, Judah
 
 ## References:
