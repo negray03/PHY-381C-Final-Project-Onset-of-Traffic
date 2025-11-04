@@ -25,7 +25,7 @@ We plan to model the onset of traffic using the Nagel–Schreckenberg model, whi
 
 The additional layer we plan to add to this to add some complexity is another lane or two. Where if the car does not have enough spaces to move forward its velocity we check to see if it can do so in the lane beside it. If so, it will move over. If not, it will stay in its lane and follow the regular protocol. 
 
-
+We also plan to add car crashes where if two cars are close to each other they have a small probability of crashing and holding up traffic in that lane for some finite amount of iterations. 
 
 ## ReadMe Outline:
 1. Description / Background / Introduction
