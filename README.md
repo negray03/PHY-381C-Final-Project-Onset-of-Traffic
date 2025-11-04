@@ -52,13 +52,13 @@ Natalie
 4. Implementing the multiple lanes:
 Judah
 5. Car Crashes and their minimization
-Ian
+Inhyeok
 6. Creating some way to show the results:
 Judah
 7. Making the Presentation:
 Meredith, Emma
 8. I am assuming we will all presesnt unless we can't be there:
-Natalie, Emma, Meredith, Ian, Judah
+Natalie, Emma, Meredith, Inhyeok, Judah
 
 ## References:
 https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
