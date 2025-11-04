@@ -45,8 +45,8 @@ These are things that I forsee needing to be done, but feel free to add some to 
 
 1. Creating the project proposal: 
 Natalie
-2. Creating the project READme (not this one the real one): Emma, Meredith
-
+2. Creating the project READme (not this one the real one):
+Emma, Meredith
 3. Implementing the basic level of code (1 lane of traffic):
 Natalie
 4. Implementing the multiple lanes:
@@ -57,7 +57,7 @@ Inhyeok
 Judah
 7. Making the Presentation:
 Meredith, Emma
-8. We will all presesnt unless we can't be there:
+8. We will all presesnt:
 Natalie, Emma, Meredith, Inhyeok, Judah
 
 ## References:
