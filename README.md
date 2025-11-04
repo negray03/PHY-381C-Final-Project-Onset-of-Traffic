@@ -28,7 +28,7 @@ I am very open to changes here this was a potential rough outline
 The additional layer we plan to add to this to add some complexity is another lane or two. Where if the car does not have enough spaces to move forward its velocity we check to see if it can do so in the lane beside it. If so, it will move over. If not, it will stay in its lane and follow the regular protocol. 
 
 ## ReadMe Outline:
-1. Description / Background
+1. Description / Background / Introduction
 2. Numerical Approach
 3. Installation
 4. Folder Structure
@@ -58,5 +58,7 @@ Meredith, Emma
 7. I am assuming we will all presesnt unless we can't be there:
 Natalie, Emma, Meredith
 
+## References:
+https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
 
 
