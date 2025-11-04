@@ -45,7 +45,7 @@ These are things that I forsee needing to be done, but feel free to add some to 
 
 1. Creating the project proposal: 
 Natalie
-2. Creating the project READme (not this one the real one): Emma
+2. Creating the project READme (not this one the real one): Emma, Meredith
 
 3. Implementing the basic level of code (1 lane of traffic):
 Natalie
@@ -56,7 +56,7 @@ Natalie
 6. Making the Presentation:
 Meredith, Emma
 7. I am assuming we will all presesnt unless we can't be there:
-Natalie, Emma
+Natalie, Emma, Meredith
 
 
 
