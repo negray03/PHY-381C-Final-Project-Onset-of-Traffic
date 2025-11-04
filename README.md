@@ -9,6 +9,12 @@ Maybe a demo section that shows some the oscilatory nature
 A directory for the main code with a sub-directory for the code of additional lanes of traffic
 Another folder for the results
 
+demo.ipynb        contains a quick demonstration of the simulation and visualization  
+single_lane.py implements the one lane version of Nagel–Schreckenberg model  
+multi_lane.py  adds the two lane version? with the lane changing rules  
+utils.py       helper functions for initialization, data output, and plotting  
+results/           directory for generated plots and CSV data  
+
 I am very open to changes here this was a potential rough outline
 
 ## Plan of implementation:
@@ -20,6 +26,18 @@ I am very open to changes here this was a potential rough outline
 5. Then we will update all cars at the same time.
 
 The additional layer we plan to add to this to add some complexity is another lane or two. Where if the car does not have enough spaces to move forward its velocity we check to see if it can do so in the lane beside it. If so, it will move over. If not, it will stay in its lane and follow the regular protocol. 
+
+## ReadMe Outline:
+1. Description / Background
+2. Numerical Approach
+3. Installation
+4. Folder Structure
+5. Usage
+6. Example Results
+7. Conclusion
+8. Potential Applications
+9. Resources
+10. Credits
 
 ## Team Contributions
 
