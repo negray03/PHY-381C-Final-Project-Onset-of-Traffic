@@ -50,13 +50,15 @@ Natalie
 3. Implementing the basic level of code (1 lane of traffic):
 Natalie
 4. Implementing the multiple lanes:
-
-5. Creating some way to show the results:
-
-6. Making the Presentation:
+Judah
+5. Car Crashes and their minimization
+Ian
+6. Creating some way to show the results:
+Judah
+7. Making the Presentation:
 Meredith, Emma
-7. I am assuming we will all presesnt unless we can't be there:
-Natalie, Emma, Meredith
+8. I am assuming we will all presesnt unless we can't be there:
+Natalie, Emma, Meredith, Ian, Judah
 
 ## References:
 https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
