@@ -13,9 +13,9 @@ I am very open to changes here this was a potential rough outline
 
 ## Plan of implementation:
 
-1. Create a length of cells that are in a loop and the first cell and last cell are also connected and place several cars in the cells. Only one car to a cell. 
-2. These cars will need to model acceleration and velocity so intial they can all be assigned a velocity between 1 and 5 after every iteration if there is enought room ahead of them (aka nuber of cells to move) they can move the number of cells their velocity has been set at and increase their velocity by 1 (acceleration) until they reach the max velocity.
-3. If there isn't an option to move forward the number of cells then their velocity will decrease to the number of empty cells between them and the car in front of them.
+1. Create a length of l cells that are connected in a loop so that the first cell and last cell are connected and then we can randomly place several cars in the cells. Only one car to a cell. 
+2. These cars will need to model acceleration and velocity so intially they can all be assigned a velocity between 1 and 5. After every iteration if there is enought room ahead of them (aka number of cells to move between them and the car ahead) they can move the number of cells their velocity has been set at and increase their velocity by 1 (acceleration) each iteration until they reach the max velocity.
+3. If there isn't an option to move forward the correct number of cells then their velocity will decrease to the number of empty cells between them and the car in front of them.
 4. The cars will also have randomization in their speed so will set all cars with >1 velocity will decrease 1 velocity with probability p. 
 5. Then we will update all cars at the same time.
 
