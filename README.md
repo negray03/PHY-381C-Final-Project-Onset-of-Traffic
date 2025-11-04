@@ -1,7 +1,7 @@
 # PHY-381C-Final-Project-Onset-of-Traffic
 
 ## Description: 
-We plan to model the onset of traffic using the Nagel–Schreckenberg_model which is essentially a cellular automa model.
+We plan to model the onset of traffic using the Nagel–Schreckenberg model, which is essentially a cellular automa model.
 
 ## Directory structure
 
@@ -25,17 +25,19 @@ The additional layer we plan to add to this to add some complexity is another la
 
 These are things that I forsee needing to be done, but feel free to add some to the list. I was thinking we could kind of just do this like a signup sheet. Multiple people could sign up for the same thing too and work together on it. 
 
-1. Creating the project READme (not this one the real one)
-
-2. Implementing the basic level of code (1 lane of traffic):
+1. Creating the project proposal: 
 Natalie
-3. Implementing the multiple lanes
+2. Creating the project READme (not this one the real one):
 
-4. Creating some way to show the results
+3. Implementing the basic level of code (1 lane of traffic):
+Natalie
+4. Implementing the multiple lanes:
 
-5. Making the Presentation:
+5. Creating some way to show the results:
+
+6. Making the Presentation:
 Meredith
-6. I am assuming we will all presesnt unless one of us can't be there:
+7. I am assuming we will all presesnt unless we can't be there:
 Natalie
 
 
