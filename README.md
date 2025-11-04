@@ -9,11 +9,11 @@ Maybe a demo section that shows some the oscilatory nature
 A directory for the main code with a sub-directory for the code of additional lanes of traffic
 Another folder for the results
 
-demo.ipynb        contains a quick demonstration of the simulation and visualization  
-single_lane.py implements the one lane version of Nagel–Schreckenberg model  
-multi_lane.py  adds the two lane version? with the lane changing rules  
-utils.py       helper functions for initialization, data output, and plotting  
-results/           directory for generated plots and CSV data  
+`demo.ipynb`        contains a quick demonstration of the simulation and visualization  
+`single_lane.py` implements the one lane version of Nagel–Schreckenberg model  
+`multi_lane.py`  adds the two lane version? with the lane changing rules  
+`utils.py`       helper functions for initialization, data output, and plotting  
+`results/`           directory for generated plots and CSV data  
 
 I am very open to changes here this was a potential rough outline
 
