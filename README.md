@@ -6,9 +6,8 @@
 We plan to model the onset of traffic using the Nagel–Schreckenberg model, which is essentially a cellular automa model.
 
 - figure
-- equation??? <img width="887" height="678" alt="Screenshot 2025-11-20 at 1 42 40 PM" src="https://github.com/user-attachments/assets/e307524f-5c4b-4019-8a21-c0d8ff0091d3" />
-Figure adapted from Liang et al., 2024.
-
+- equation???
+  
 ## Installation
 Requirements: 
 ```
