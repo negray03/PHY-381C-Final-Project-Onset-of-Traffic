@@ -5,8 +5,12 @@
   ### Description: 
 We plan to model the onset of traffic using the Nagel–Schreckenberg model, which is essentially a cellular automa model.
 
+- figure
+- equation???
+
 ## Installation
 Requirements: 
+- instal this 
 
 ## Directory structure
 `demo.ipynb`        contains a quick demonstration of the simulation and visualization  
@@ -27,8 +31,19 @@ The additional layer we plan to add to this to add some complexity is another la
 
 We also plan to add car crashes where if two cars are close to each other they have a small probability of crashing and holding up traffic in that lane for some finite amount of iterations. 
 
+
+#### single lane:
+1	Acceleration: All cars not at the maximum velocity have their velocity increased by one unit. For example, if the velocity is 4 it is increased to 5.
+	2	Slowing down: All cars are checked to see if the distance between it and the car in front (in units of cells) is smaller than its current velocity (which has units of cells per time step). If the distance is smaller than the velocity, the velocity is reduced to the number of empty cells in front of the car – to avoid a collision. For example, if the velocity of a car is now 5, but there are only 3 free cells in front of it, with the fourth cell occupied by another car, the car velocity is reduced to 3.
+	3	Randomization: The speed of all cars that have a velocity of at least 1, is now reduced by one unit with a probability of p. For example, if p = 0.5, then if the velocity is 4, it is reduced to 3 50% of the time.
+	4	Car motion: Finally, all cars are moved forward the number of cells equal to their velocity. For example, if the velocity is 3, the car is moved forward 3 cells.
+
+#### multiple lane: 
+
+
 ## Basic Usage
 ## Results Visualization
+## Head scrathers - replace title
 ## Conclusion
 ## Applications
 ## Resources
