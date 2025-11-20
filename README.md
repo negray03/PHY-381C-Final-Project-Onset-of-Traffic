@@ -1,20 +1,20 @@
 # PHY-381C-Final-Project-Onset-of-Traffic
 
-## Description: 
+## Introduction
+  ### Description: 
 We plan to model the onset of traffic using the Nagel–Schreckenberg model, which is essentially a cellular automa model.
 
+## Installation
+Requirements: 
+
 ## Directory structure
-
-
 `demo.ipynb`        contains a quick demonstration of the simulation and visualization  
 `Lanes.ipynb` implements the one lane version of Nagel–Schreckenberg model and adds the multi-lane version with lane changing rules
 `car_crash.py`   adds car crash capability to simulate lane closures  ????? are we gonna have this ??????
-`utils.py`       helper functions for initialization, data output, and plotting  
 `results/`           directory for generated plots and CSV data  
 
-
-
-## Plan of implementation:
+## Numerical Approach
+  ### Plan of implementation: (add update rules)
 
 1. Create a length of l cells that are connected in a loop so that the first cell and last cell are connected and then we can randomly place several cars in the cells. Only one car to a cell. 
 2. These cars will need to model acceleration and velocity so intially they can all be assigned a velocity between 1 and 5. After every iteration if there is enought room ahead of them (aka number of cells to move between them and the car ahead) they can move the number of cells their velocity has been set at and increase their velocity by 1 (acceleration) each iteration until they reach the max velocity.
@@ -26,17 +26,12 @@ The additional layer we plan to add to this to add some complexity is another la
 
 We also plan to add car crashes where if two cars are close to each other they have a small probability of crashing and holding up traffic in that lane for some finite amount of iterations. 
 
-## ReadMe Outline:
-1. Description / Background / Introduction
-2. Numerical Approach
-4. Installation
-5. Folder Structure
-6. Usage
-7. Example Results
-8. Conclusion
-9. Potential Applications
-10. Resources
-11. Credits
+## Basic Usage
+## Results Visualization
+## Conclusion
+## Applications
+## Resources
+## Credits
 
 ## Team Contributions
 
