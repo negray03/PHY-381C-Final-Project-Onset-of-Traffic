@@ -14,18 +14,10 @@ Requirements:
 pip install numpy
 pip install matplotlib
 ```
-- 
-
-## Directory structure
-`demo.ipynb`        contains a quick demonstration of the simulation and visualization  
-`Lanes.ipynb` implements the one lane version of Nagel–Schreckenberg model and adds the multi-lane version with lane changing rules
-`car_crash.py`   adds car crash capability to simulate lane closures  ????? are we gonna have this ??????
-`results/`           directory for generated plots and CSV data  
 
 ## Implementation
-  ### Plan of implementation:
-  - Single lane rules
-  - Multi lane rules
+### Single lane:
+  First we implement a model for single lane traffic. The rules are.......
 
 1. Create a length of l cells that are connected in a loop so that the first cell and last cell are connected and then we can randomly place several cars in the cells. Only one car to a cell. 
 2. These cars will need to model acceleration and velocity so intially they can all be assigned a velocity between 1 and 5. After every iteration if there is enought room ahead of them (aka number of cells to move between them and the car ahead) they can move the number of cells their velocity has been set at and increase their velocity by 1 (acceleration) each iteration until they reach the max velocity.
@@ -37,8 +29,6 @@ The additional layer we plan to add to this to add some complexity is another la
 
 We also plan to add car crashes where if two cars are close to each other they have a small probability of crashing and holding up traffic in that lane for some finite amount of iterations. 
 
-
-#### single lane:
 1. Acceleration: All cars not at the maximum velocity have their velocity increased by one unit. For example, if the velocity is 4 it is increased to 5.
 
 2. Slowing down: All cars are checked to see if the distance between it and the car in front (in units of cells) is smaller than its current velocity (which has units of cells per time step). If the distance is smaller than the velocity, the velocity is reduced to the number of empty cells in front of the car – to avoid a collision. For example, if the velocity of a car is now 5, but there are only 3 free cells in front of it, with the fourth cell occupied by another car, the car velocity is reduced to 3.
@@ -48,6 +38,7 @@ We also plan to add car crashes where if two cars are close to each other they h
 4. Car motion: Finally, all cars are moved forward the number of cells equal to their velocity. For example, if the velocity is 3, the car is moved forward 3 cells.
 
 #### multiple lane: 
+Next we add multiple lanes to our model. RUles...
 
 
 
