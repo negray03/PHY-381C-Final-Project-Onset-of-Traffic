@@ -10,8 +10,10 @@ We plan to model the onset of traffic using the Nagel–Schreckenberg model, whi
 
 ## Installation
 Requirements: 
-``` pip install numpy
-pip install matplotlib ```
+```
+pip install numpy
+pip install matplotlib
+```
 - 
 
 ## Directory structure
