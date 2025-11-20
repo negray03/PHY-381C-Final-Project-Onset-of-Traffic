@@ -7,9 +7,8 @@ We plan to model the onset of traffic using the Nagel–Schreckenberg model, whi
 
 
 `demo.ipynb`        contains a quick demonstration of the simulation and visualization  
-`single_lane.py` implements the one lane version of Nagel–Schreckenberg model  
-`multi_lane.py`  adds the two lane version with the lane changing rules  
-`car_crash.py`   adds car crash capability to simulate lane closures  
+`Lanes.ipynb` implements the one lane version of Nagel–Schreckenberg model and adds the multi-lane version with lane changing rules
+`car_crash.py`   adds car crash capability to simulate lane closures  ????? are we gonna have this ??????
 `utils.py`       helper functions for initialization, data output, and plotting  
 `results/`           directory for generated plots and CSV data  
 
@@ -30,14 +29,14 @@ We also plan to add car crashes where if two cars are close to each other they h
 ## ReadMe Outline:
 1. Description / Background / Introduction
 2. Numerical Approach
-3. Installation
-4. Folder Structure
-5. Usage
-6. Example Results
-7. Conclusion
-8. Potential Applications
-9. Resources
-10. Credits
+4. Installation
+5. Folder Structure
+6. Usage
+7. Example Results
+8. Conclusion
+9. Potential Applications
+10. Resources
+11. Credits
 
 ## Team Contributions
 
