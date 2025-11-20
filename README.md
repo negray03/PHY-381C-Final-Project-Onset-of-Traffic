@@ -1,4 +1,5 @@
-# PHY-381C-Final-Project-Onset-of-Traffic
+# Modeling Traffic Using the Nagel–Schreckenberg Model
+#### Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner
 
 ## Introduction
   ### Description: 
