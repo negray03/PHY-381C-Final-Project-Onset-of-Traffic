@@ -16,7 +16,7 @@ pip install matplotlib
 ```
 
 ## Implementation
-### Single lane:
+### Single lane implementation:
   First we implement a model for single lane traffic. The rules are.......
 
 1. Create a length of l cells that are connected in a loop so that the first cell and last cell are connected and then we can randomly place several cars in the cells. Only one car to a cell. 
@@ -37,23 +37,19 @@ We also plan to add car crashes where if two cars are close to each other they h
 
 4. Car motion: Finally, all cars are moved forward the number of cells equal to their velocity. For example, if the velocity is 3, the car is moved forward 3 cells.
 
-#### multiple lane: 
+### Multiple lane implementation: 
 Next we add multiple lanes to our model. RUles...
 
-
-
-
-
 ## Results Visualization
+- To visualize the results, .... 
+
 ## Conclusion
+- In conclusion, ....
+
 ## Applications
-## Resources
-## Credits
+- some applicatoins of this model could be....
 
 ## Team Contributions
-
-These are things that I forsee needing to be done, but feel free to add some to the list. I was thinking we could kind of just do this like a signup sheet. Multiple people could sign up for the same thing too and work together on it. 
-
 1. Creating the project proposal: 
 Natalie
 2. Creating the project READme (not this one the real one):
@@ -71,7 +67,7 @@ Meredith, Emma
 8. We will all presesnt:
 Natalie, Emma, Meredith, Inhyeok, Judah
 
-## References:
+## Resources:
 https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
 
 
