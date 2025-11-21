@@ -17,11 +17,11 @@ pip install matplotlib
 
 ## Implementation
 ### Single lane implementation:
-First we implement a model for single lane traffic as our baselilne/starting point.  The road is represented by a 1D array where each position represents a “cell” or location in which a car could occupy.
+First we implement a model for single lane traffic as our baselilne/starting point.  The road is represented by a 1D-array where each position represents a “cell” or location in which a car could occupy.
 
 We then randomly place several cars into the cells and each cell is assigned a numerical value: 
 - $v = -1$     → cell is empty, no car occupies that cell
-- $v = 0-5$     → cell has a car with velocity $0-5$
+- $v = 0-5$     → cell is occupied by a car with velocity $0-5$
 
 With these as the inititail conditions, we iterate over various time steps and the simulation evovles according to the following rules for car motion, including acceleration, slowing down, and randomization. 
 
@@ -32,7 +32,10 @@ With these as the inititail conditions, we iterate over various time steps and t
 
 
 ### Multiple lane implementation: 
-Next we add multiple lanes to our model. RUles...
+Next we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves raccording to the following new rules:
+1. Rule 1
+2. Rule 2
+3. Rule 3 --- GET INFO FROM JUDAH WHEN HE IS DONE
 
 ## Results Visualization
 - To visualize the results, .... 
