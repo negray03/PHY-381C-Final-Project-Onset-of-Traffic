@@ -3,7 +3,12 @@
 
 ## Introduction
   ### Description: 
-We plan to model the onset of traffic using the Nagel–Schreckenberg model, which is essentially a cellular automa model.
+****** reword the following — from wikipedia*****
+The Nagel-Schrenkenbreg (NS) model is a theoretical simulation of traffic on a freeway. It is essentially a cellular automaton model for road traffic flow that can reproduce traffic jams, i.e., show a slow down in average car speed when the road is crowded (high density of cars). The model shows how traffic jams can be thought of as an emergent or collective phenomenon due to interactions between cars on the road, when the density of cars is high and so cars are close to each other on average.
+
+In our work here, we use implement a simple cellular authomaton model to simulate the onset of traffic, taking inspiration from the NS model with the addition of lane changing in a multi-lane model. The model works by creating a grid with periodic bounday conditions where each cell in the grid is either empty, or has a car with some velocity, $v$. Each grid can only be occupied by one car at a time. 
+
+Time is discretized into time steps. So with each time step, the system evolves and cars either move forward, change lanes (in the multi-lane implementation), or slow down and get stuck in a traffic jam. 
 
 - figure
 - equation???
@@ -23,6 +28,7 @@ We then randomly place several cars into the cells and each cell is assigned a n
 - $v = 0-5$     → cell is occupied by a car with velocity $0-5$
 
 With these as the inititail conditions, we iterate over various time steps and the simulation evovles according to the following rules for car motion, including acceleration, slowing down, and randomization. 
+******reword the following — from wikipedia*****
 1. Car motion: Finally, all cars are moved forward the number of cells equal to their velocity. For example, if the velocity is $v = 3$, the car is moved forward $3$ cells.
 2. Acceleration: All cars not at the maximum velocity have their velocity increased by one unit. For example, if the velocity is $v = 4$ it is increased to $5$.
 3. Slowing down: All cars are checked to see if the distance between it and the car in front (in units of cells) is smaller than its current velocity (which has units of cells per time step). If the distance is smaller than the velocity, the velocity is reduced to the number of empty cells in front of the car – to avoid a collision. For example, if the velocity of a car is now 5, but there are only 3 free cells in front of it, with the fourth cell occupied by another car, the car velocity is reduced to 3.
@@ -33,7 +39,7 @@ With these as the inititail conditions, we iterate over various time steps and t
 Next we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves raccording to the following new rules:
 1. Rule 1
 2. Rule 2
-3. Rule 3 --- GET INFO FROM JUDAH WHEN HE IS DONE
+3. Rule 3 --- *****GET INFO FROM JUDAH WHEN HE IS DONE*****
 
 ## Results Visualization
 - To visualize the results, .... 
