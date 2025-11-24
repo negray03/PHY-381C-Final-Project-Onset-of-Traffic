@@ -25,7 +25,7 @@ pip install matplotlib
 First we implement a model for single lane traffic as our baselilne/starting point.  The road is represented by a 1D-array where each position represents a “cell” or location in which a car could occupy.
 We then randomly place several cars into the cells and each cell is assigned a numerical value: 
 - $v = -1$     → cell is empty, no car occupies that cell
-- $v = 0-5$     → cell is occupied by a car with velocity $0-5$
+- $v =$ $0$-$5$     → cell is occupied by a car with velocity $0-5$
 
 With these as the inititail conditions, we iterate over various time steps and the simulation evovles according to the following rules for car motion, including acceleration, slowing down, and randomization. 
 ******reword the following — from wikipedia*****
