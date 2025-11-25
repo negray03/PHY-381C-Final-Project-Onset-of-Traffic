@@ -57,5 +57,6 @@ This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inh
 https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
 https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
 https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
+https://github.com/christiancosgrove/traffic-numpy
 
 
