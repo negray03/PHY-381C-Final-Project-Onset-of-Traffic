@@ -37,7 +37,6 @@ model.simulate(n_step)
      -    ```n_step``` (int): Number of iterations you want to simulate
 
 Running the multi-lane lane model:
-<u>Running the multi-lane lane model:</u>
 ```
 Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
