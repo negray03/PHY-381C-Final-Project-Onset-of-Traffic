@@ -30,7 +30,8 @@ model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
 
-    Parameters:
+
+Parameters:
      -    ```n``` (int): Length of the road (number of cells)
      -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
      -    ```vmax``` (int): Maximum allowed velocity
@@ -43,7 +44,8 @@ Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
 ```
 
-    Parameters:
+
+Parameters:
      -    ```cells``` (int): Length of the road (number of cells)
      -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
      -    ```vmax``` (int): Maximum allowed velocity
