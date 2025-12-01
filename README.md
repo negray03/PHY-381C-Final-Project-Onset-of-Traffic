@@ -13,12 +13,38 @@ Time is discretized into time steps. So with each time step, the system evolves 
 - figure
 - equation???
   
-## Installation
+## Installation and Basic Usage
+
 Requirements: 
 ```
 pip install numpy
 pip install matplotlib
 ```
+
+1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
+2. Run single lane model: ```model = Traffic(n=20, density=0, vmax=5, p=0)
+model.simulate(10) ```
+
+- Parameters:
+    ```n``` (int): Length of the road (number of cells)
+    ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+    ```vmax``` (int): Maximum allowed velocity
+    ```p``` (float): Random slowdown probability (0 to 1)
+    ```grid``` (np.ndarray): The grid of car velocities or -1 for empty
+    ```history``` (list): A list of configurations of the grid at each step
+
+3. Run multilane model: ```Model = Multi_Lane_Traffic(
+                        cells=10,
+                        lanes=10,
+                        density=0.43,
+                        vmax=5,
+                        p=0,
+                        random_state=10,
+                        )
+
+Model.simulate(10000)```
+
+Parameters:
 
 ## Implementation
 ### Single lane implementation:
