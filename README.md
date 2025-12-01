@@ -32,11 +32,12 @@ model.simulate(n_step)
 
 
 Parameters:
-     -    ```n``` (int): Length of the road (number of cells)
-     -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
-     -    ```vmax``` (int): Maximum allowed velocity
-     -    ```p``` (float): Random slowdown probability (0 to 1)
-     -    ```n_step``` (int): Number of iterations you want to simulate
+- ```n``` (int): Length of the road (number of cells)
+- ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+- ```vmax``` (int): Maximum allowed velocity
+- ```p``` (float): Random slowdown probability (0 to 1)
+- ```n_step``` (int): Number of iterations you want to simulate
+     
 
 Running the multi-lane lane model:
 ```
@@ -46,11 +47,11 @@ Model.simulate(n_step)
 
 
 Parameters:
-     -    ```cells``` (int): Length of the road (number of cells)
-     -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
-     -    ```vmax``` (int): Maximum allowed velocity
-     -    ```p``` (float): Random slowdown probability (0 to 1)
-     -    ```n_step``` (int): Number of iterations you want to simulate
+- ```cells``` (int): Length of the road (number of cells)
+- ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+- ```vmax``` (int): Maximum allowed velocity
+- ```p``` (float): Random slowdown probability (0 to 1)
+- ```n_step``` (int): Number of iterations you want to simulate
 
 ## Implementation
 ### Single lane implementation:
