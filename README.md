@@ -42,7 +42,9 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 3. Rule 3 --- *****GET INFO FROM JUDAH WHEN HE IS DONE*****
 
 ## Results Visualization
-- To visualize the results, .... 
+- To visualize the results, ....
+- ![Description of GIF](visualizations/traffic_simulation_80cars.gif)
+
 
 ## Conclusion
 - In conclusion, ....
