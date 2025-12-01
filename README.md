@@ -24,36 +24,30 @@ pip install matplotlib
 1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
 2. Run models inside the ```Lanes.ipynb``` notebook:
 
-### Running the single lane model
+Running the single lane model:
 ```
 model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
+    Parameters:
+     -    ```n``` (int): Length of the road (number of cells)
+     -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+     -    ```vmax``` (int): Maximum allowed velocity
+     -    ```p``` (float): Random slowdown probability (0 to 1)
+     -    ```n_step``` (int): Number of iterations you want to simulate
 
-Parameters:
- -    ```n``` (int): Length of the road (number of cells)
- -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
- -    ```vmax``` (int): Maximum allowed velocity
- -    ```p``` (float): Random slowdown probability (0 to 1)
- -    ```grid``` (np.ndarray): The grid of car velocities or -1 for empty
- -    ```history``` (list): A list of configurations of the grid at each step
- -    ```n_step``` (int): Number of iterations you want to simulate
-
-### Running the multi-lane lane model
+Running the multi-lane lane model:
+<u>Running the multi-lane lane model:</u>
 ```
-Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state) = random
-
+Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
 ```
-
-Parameters:
- -    ```cells``` (int): Length of the road (number of cells)
- -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
- -    ```vmax``` (int): Maximum allowed velocity
- -    ```p``` (float): Random slowdown probability (0 to 1)
- -    ```grid``` (np.ndarray): The grid of car velocities or -1 for empty
- -    ```history``` (list): A list of configurations of the grid at each step
- -    ```n_step``` (int): Number of iterations you want to simulate
+    Parameters:
+     -    ```cells``` (int): Length of the road (number of cells)
+     -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+     -    ```vmax``` (int): Maximum allowed velocity
+     -    ```p``` (float): Random slowdown probability (0 to 1)
+     -    ```n_step``` (int): Number of iterations you want to simulate
 
 ## Implementation
 ### Single lane implementation:
