@@ -26,8 +26,8 @@ pip install matplotlib
 
 ### Running the single lane model
 ```
-model = Traffic(n=20, density=0, vmax=5, p=0)
-model.simulate(10)
+model = Traffic(n, density, vmax, p)
+model.simulate(n_step)
 ```
 
 Parameters:
@@ -37,19 +37,13 @@ Parameters:
  -    ```p``` (float): Random slowdown probability (0 to 1)
  -    ```grid``` (np.ndarray): The grid of car velocities or -1 for empty
  -    ```history``` (list): A list of configurations of the grid at each step
+ -    ```n_step``` (int): Number of iterations you want to simulate
 
 ### Running the multi-lane lane model
 ```
-Model = Multi_Lane_Traffic(
-                        cells=10,
-                        lanes=10,
-                        density=0.43,
-                        vmax=5,
-                        p=0,
-                        random_state=10,
-                        )
+Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state) = random
 
-Model.simulate(10000)
+Model.simulate(n_step)
 ```
 
 Parameters:
@@ -59,6 +53,7 @@ Parameters:
  -    ```p``` (float): Random slowdown probability (0 to 1)
  -    ```grid``` (np.ndarray): The grid of car velocities or -1 for empty
  -    ```history``` (list): A list of configurations of the grid at each step
+ -    ```n_step``` (int): Number of iterations you want to simulate
 
 ## Implementation
 ### Single lane implementation:
