@@ -29,6 +29,7 @@ Running the single lane model:
 model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
+
     Parameters:
      -    ```n``` (int): Length of the road (number of cells)
      -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
@@ -41,6 +42,7 @@ Running the multi-lane lane model:
 Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
 ```
+
     Parameters:
      -    ```cells``` (int): Length of the road (number of cells)
      -   ```density``` (float): Fraction of cells initially containing cars (0 to 1)
