@@ -52,6 +52,7 @@ Parameters:
 - ```vmax``` (int): Maximum allowed velocity
 - ```p``` (float): Random slowdown probability (0 to 1)
 - ```n_step``` (int): Number of iterations you want to simulate
+-  ```random_state```: sets the random state of our simulation.
 
 ## Implementation
 ### Single lane implementation:
