@@ -13,12 +13,46 @@ Time is discretized into time steps. So with each time step, the system evolves 
 - figure
 - equation???
   
-## Installation
+## Installation and Basic Usage
+
 Requirements: 
 ```
 pip install numpy
 pip install matplotlib
 ```
+
+1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
+2. Run models inside the ```Lanes.ipynb``` notebook:
+
+Running the single lane model:
+```
+model = Traffic(n, density, vmax, p)
+model.simulate(n_step)
+```
+
+
+Parameters:
+- ```n``` (int): Length of the road (number of cells)
+- ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+- ```vmax``` (int): Maximum allowed velocity
+- ```p``` (float): Random slowdown probability (0 to 1)
+- ```n_step``` (int): Number of iterations you want to simulate
+     
+
+Running the multi-lane lane model:
+```
+Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
+Model.simulate(n_step)
+```
+
+
+Parameters:
+- ```cells``` (int): Length of the road (number of cells)
+- ```density``` (float): Fraction of cells initially containing cars (0 to 1)
+- ```vmax``` (int): Maximum allowed velocity
+- ```p``` (float): Random slowdown probability (0 to 1)
+- ```n_step``` (int): Number of iterations you want to simulate
+-  ```random_state```: sets the random state of our simulation.
 
 ## Implementation
 ### Single lane implementation:
@@ -42,7 +76,13 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 3. Rule 3 --- *****GET INFO FROM JUDAH WHEN HE IS DONE*****
 
 ## Results Visualization
-- To visualize the results, .... 
+#### Multilane model for 3 cars
+![Description of GIF](visualizations/traffic_simulation_3cars.gif)
+#### Multilane model for 10 cars
+![Description of GIF](visualizations/traffic_simulation_10cars.gif)
+#### Multilane model for 80 cars
+![Description of GIF](visualizations/traffic_simulation_80cars.gif)
+
 
 ## Conclusion
 - In conclusion, ....
