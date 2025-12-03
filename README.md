@@ -1,17 +1,15 @@
 # Modeling Traffic Using the Nagel–Schreckenberg Model
 #### Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner
 
-## Introduction
-  ### Description: 
-****** reword the following — from wikipedia*****
-The Nagel-Schrenkenbreg (NS) model is a theoretical simulation of traffic on a freeway. It is essentially a cellular automaton model for road traffic flow that can reproduce traffic jams, i.e., show a slow down in average car speed when the road is crowded (high density of cars). The model shows how traffic jams can be thought of as an emergent or collective phenomenon due to interactions between cars on the road, when the density of cars is high and so cars are close to each other on average.
+## Introduction 
+Traffic flow is a classic example of a complex system in which simple local rules lead to rich global behavior. Even when all drivers behaves “normally,” large-scale stop-and-go waves can appear. Studying these emergent traffic patterns can help us understand congestion, optimize road design, and test ideas about self-organization in dynamical systems.
 
-In our work here, we use implement a simple cellular authomaton model to simulate the onset of traffic, taking inspiration from the NS model with the addition of lane changing in a multi-lane model. The model works by creating a grid with periodic bounday conditions where each cell in the grid is either empty, or has a car with some velocity, $v$. Each grid can only be occupied by one car at a time. 
+The Nagel–Schreckenberg (NS) model is a cellular-automaton framework used to simulate freeway traffic dynamics. It captures how traffic jams emerge as a collective phenomenon: when vehicle density increases, interactions between neighboring cars naturally lead to reduced speeds and stop-and-go patterns.
 
-Time is discretized into time steps. So with each time step, the system evolves and cars either move forward, change lanes (in the multi-lane implementation), or slow down and get stuck in a traffic jam. 
+Taking inspiration from the NS model, in this project we implement a simple cellular authomaton model to simulate the onset of traffic, extending it to include lane-changing behavior in a multi-lane roadway. The roadway is represented as a discrete grid with periodic boundary conditions, where each cell is either empty or occupied by a single car with an associated velocity  $v$. Because only one vehicle can occupy a cell at a time, local interactions determine how cars accelerate, brake, or shift lanes.
 
-- figure
-- equation???
+Time evolves in discrete steps. At each time step, every vehicle updates its state according to the model rules: it may advance forward, change lanes (in the multi-lane case), adjust its speed, or become part of a traffic jam depending on its surroundings.
+
   
 ## Installation and Basic Usage
 
@@ -82,6 +80,9 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 ![Description of GIF](visualizations/traffic_simulation_10cars.gif)
 #### Multilane model for 80 cars
 ![Description of GIF](visualizations/traffic_simulation_80cars.gif)
+
+
+We simulated cells over 100 iterations while varying the density and lane amount. The 3d plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
 
 
 ## Conclusion
