@@ -86,6 +86,12 @@ We simulated cells over 100 iterations while varying the density and lane amount
 ![](visualizations/Average%20and%20Flow%202D%20vs%20density%20and%20lanes%20(final).png) ![](visualizations/Average%20and%20Flow%203D%20vs%20density%20and%20lanes%20(final).png)
 
 
+<p align="center">
+  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="350" />
+  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="350" />
+</p>
+
+
 ## Conclusion
 - In conclusion, ....
 
