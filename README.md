@@ -83,10 +83,7 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 
 ### Average Flow and Jamming Fraction (2D and 3D)
 We simulated cells over 100 iterations while varying the density and lane amount. Below we show the 2D and 3D average flow The 3d plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
-![](visualizations/Average%20and%20Flow%202D%20vs%20density%20and%20lanes%20(final).png)
-![](visualizations/Average%20and%20Flow%203D%20vs%20density%20and%20lanes%20(final).png)
-
-
+![](visualizations/Average%20and%20Flow%202D%20vs%20density%20and%20lanes%20(final).png) ![](visualizations/Average%20and%20Flow%203D%20vs%20density%20and%20lanes%20(final).png)
 
 
 ## Conclusion
@@ -96,7 +93,7 @@ We simulated cells over 100 iterations while varying the density and lane amount
 - some applicatoins of this model could be....
 
 ## Authors and Acknowledgments
-This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay for their support and wisdom LOL
+This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. 
 
 ## Resources:
 https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
