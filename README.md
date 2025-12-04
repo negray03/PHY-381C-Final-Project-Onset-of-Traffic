@@ -64,19 +64,29 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 3. Rule 3 --- *****GET INFO FROM JUDAH WHEN HE IS DONE*****
 
 ## Results Visualization
-#### Multilane model for 3 cars
-![Description of GIF](visualizations/traffic_simulation_3cars.gif)
-#### Multilane model for 10 cars
-![Description of GIF](visualizations/traffic_simulation_10cars.gif)
-#### Multilane model for 80 cars
-![Description of GIF](visualizations/traffic_simulation_80cars.gif)
+
+### Multilane model for 3 cars
+<p align="center">
+  <img src="visualizations/traffic_simulation_3cars.gif" width="450" />
+</p>
+
+### Multilane model for 10 cars
+<p align="center">
+  <img src="visualizations/traffic_simulation_10cars.gif" width="450" />
+</p>
+
+### Multilane model for 80 cars
+<p align="center">
+  <img src="visualizations/traffic_simulation_80cars.gif" width="450" />
+</p>
+
 
 ### Average Flow and Jamming Fraction (2D and 3D)
 We simulated cells over 100 iterations while varying the density and lane amount. Below we show the 2D (left) and 3D (right) average flow The 3d plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
 
 <p align="center">
-  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="650" />
-  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="650" />
+  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="550" />
+  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="550" />
 </p>
 
 
