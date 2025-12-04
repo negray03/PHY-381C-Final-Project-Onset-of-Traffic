@@ -24,7 +24,7 @@ With these as the inititail conditions, we iterate over various time steps and t
 3. Slowing down: All cars are checked to see if the distance between it and the car in front (in units of cells) is smaller than its current velocity (which has units of cells per time step). If the distance is smaller than the velocity, the velocity is reduced to the number of empty cells in front of the car – to avoid a collision. For example, if the velocity of a car is now 5, but there are only 3 free cells in front of it, with the fourth cell occupied by another car, the car velocity is reduced to 3.
 4. Randomization: The speed of all cars that have a velocity of at least 1, is now reduced by one unit with a probability of p. For example, if $p = 0.5$, then if the velocity is 4, it is reduced to 3 50% of the time.
 
-![](visualizations/full_iteration_drawing.png)
+![ ](visualizations/full_iteration_drawing.png)
 
 
 ### Multiple lane implementation: 
