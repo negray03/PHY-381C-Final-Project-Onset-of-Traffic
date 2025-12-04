@@ -34,19 +34,10 @@ Below is a visualization of one full update of the single-lane model. Each itera
 (E) cars move forward according to their final velocity.
 
 
-<p align="center">
-  <img src="visualizations/full_iteration_drawing.jpg" width="450" />
-</p>
-
-
-
 
 <table>
   <tr>
     <td width="40%" valign="top" style="padding-right: 25px;">
-      <p><b><p><b>
-      <p><b><p><b>
-      <p><b><p><b>
       <p><b>(A)</b> cars start with their initial velocities;</p>
       <p><b>(B)</b> each car accelerates;</p>
       <p><b>(C)</b> cars reduce speed if the space ahead is limited;</p>
