@@ -27,30 +27,20 @@ Running the single lane model:
 model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
-
-
-Parameters:
-- ```n``` (int) also called ```cells``` (int) in the multi-lane model: Length of the road (number of cells)
-- ```density``` (float): Fraction of cells initially containing cars (0 to 1)
-- ```vmax``` (int): Maximum allowed velocity
-- ```p``` (float): Random slowdown probability (0 to 1)
-- ```n_step``` (int): Number of iterations you want to simulate
      
-
 Running the multi-lane lane model:
 ```
 Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
 ```
 
-
-Parameters:
-- ```cells``` (int): Length of the road (number of cells)
+With parameters:
+- ```n``` (int) also called ```cells``` (int) in the multi-lane model: Length of the road (number of cells)
 - ```density``` (float): Fraction of cells initially containing cars (0 to 1)
 - ```vmax``` (int): Maximum allowed velocity
 - ```p``` (float): Random slowdown probability (0 to 1)
 - ```n_step``` (int): Number of iterations you want to simulate
--  ```random_state```: sets the random state of our simulation.
+
 
 ## Implementation
 ### Single lane implementation:
@@ -85,8 +75,8 @@ Next we implement a model for multi-lane traffic. Now our road has expanded so t
 We simulated cells over 100 iterations while varying the density and lane amount. Below we show the 2D (left) and 3D (right) average flow The 3d plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
 
 <p align="center">
-  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="450" />
-  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="450" />
+  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="650" />
+  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="650" />
 </p>
 
 
