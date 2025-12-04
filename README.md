@@ -23,17 +23,6 @@ Starting from these initial conditions, we update the system over discrete time 
 4. Motion: Finally, each car advances forward a number of cells equal to its (possibly adjusted) velocity.
 
 Below is a visualization of one full update of the single-lane model. Each iteration consists of steps A–E: 
-(A) cars start with their initial velocities; 
-
-(B) each car accelerates; 
-
-(C) cars reduce speed if the space ahead is limited; 
-
-(D) cars may randomly slow down; 
-
-(E) cars move forward according to their final velocity.
-
-
 
 <table>
   <tr>
