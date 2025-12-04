@@ -102,20 +102,15 @@ Using the Nagel–Schreckenberg model and our multi-lane extension, we were able
 
 ### Future Directions
 
-Extend the model beyond a cellular automaton to a continuous framework
-
-Add driver-responsiveness and collision rules
-
-Explore optimized or adaptive initial conditions for each car
-
-## Applications
-- some applicatoins of this model could be....
+- Extend the model beyond a cellular automaton to a continuous framework
+- Add driver-responsiveness and collision rules
+- Explore optimized or adaptive initial conditions for each car
 
 ## Authors and Acknowledgments
 This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. 
 
 ## Resources:
-https://www.mdpi.com/1424-8220/24/23/7672 -- might have some good images for the intro
+https://www.mdpi.com/1424-8220/24/23/7672
 https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
 https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
 https://github.com/christiancosgrove/traffic-numpy
