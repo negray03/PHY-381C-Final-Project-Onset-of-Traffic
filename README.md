@@ -43,14 +43,19 @@ Below is a visualization of one full update of the single-lane model. Each itera
 
 <table>
   <tr>
-    <td align="right" valign="middle">
-      <b>(A)<br>(B)<br>(C)<br>(D)<br>(E)</b>
+    <td width="10%" valign="top">
+      <p><b>(A)</b> cars start with their initial velocities;</p>
+      <p><b>(B)</b> each car accelerates;</p>
+      <p><b>(C)</b> cars reduce speed if the space ahead is limited;</p>
+      <p><b>(D)</b> cars may randomly slow down;</p>
+      <p><b>(E)</b> cars move forward according to their final velocity.</p>
     </td>
-    <td>
-      <img src="visualizations/full_iteration_drawing.jpg" width="450">
+    <td width="60%" valign="top">
+      <img src="visualizations/full_iteration_drawing.jpg" width="550">
     </td>
   </tr>
 </table>
+
 
 
 
