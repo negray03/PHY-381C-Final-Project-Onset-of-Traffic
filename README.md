@@ -36,6 +36,7 @@ Below is a visualization of one full update of the single-lane model. Each itera
       </div>
     </td>
     <td width="75%" valign="center">
+      <div align="center">
       <img src="visualizations/full_iteration_drawing.jpg" width="525">
     </td>
   </tr>
