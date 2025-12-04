@@ -39,6 +39,22 @@ Below is a visualization of one full update of the single-lane model. Each itera
 </p>
 
 
+
+
+<table>
+  <tr>
+    <td align="right" valign="middle">
+      <b>(A)<br>(B)<br>(C)<br>(D)<br>(E)</b>
+    </td>
+    <td>
+      <img src="visualizations/full_iteration_drawing.jpg" width="450">
+    </td>
+  </tr>
+</table>
+
+
+
+
 ### Multiple lane implementation: 
 Next we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves raccording to the following new rules:
 Any car that can not move forwards unimpeded, but has room in an adjacent lane, will be placed in a lane-change queue. 
