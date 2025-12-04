@@ -59,9 +59,12 @@ With these as the inititail conditions, we iterate over various time steps and t
 
 ### Multiple lane implementation: 
 Next we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves raccording to the following new rules:
-1. Rule 1
-2. Rule 2
-3. Rule 3 --- *****GET INFO FROM JUDAH WHEN HE IS DONE*****
+Any car that can not move forwards unimpeded, but has room in an adjacent lane, will be placed in a lane-change queue. 
+
+The rules added from the single lane model are that for each queued car: 
+- Switch to the adjacent lane that lets it travel farther.
+- If both lanes offer the same distance, choose randomly.
+- If neither lane provides an advantage, the car stays in the original lane.
 
 ## Results Visualization
 
@@ -94,7 +97,16 @@ We simulated cells over 100 iterations while varying the density and lane amount
 
 
 ## Conclusion
-- In conclusion, ....
+
+Using the Nagel–Schreckenberg model and our multi-lane extension, we were able to reproduce realistic traffic behavior with only simple local rules. The simulations showed expected patterns like free flow at low densities and traffic-jam formation caused by random slowing. Our visualizations made it easy to see these jams develop in real time and highlighted the added complexity introduced by lane changing.
+
+### Future Directions
+
+Extend the model beyond a cellular automaton to a continuous framework
+
+Add driver-responsiveness and collision rules
+
+Explore optimized or adaptive initial conditions for each car
 
 ## Applications
 - some applicatoins of this model could be....
