@@ -26,7 +26,7 @@ Below is a visualization of one full update of the single-lane model. Each itera
 
 <table>
   <tr>
-    <td width="30%" valign="top" style="padding-right: 25px;">
+    <td width="25%" valign="top" style="padding-right: 25px;">
       <div style="line-height: 2.0;">
         <p><b>(A)</b> cars start with their initial velocities </p>
         <p><b>(B)</b> each car accelerates $v$ → $v+1$ </p>
@@ -35,7 +35,7 @@ Below is a visualization of one full update of the single-lane model. Each itera
         <p><b>(E)</b> cars move forward according to their final velocity </p>
       </div>
     </td>
-    <td width="70%" valign="top">
+    <td width="75%" valign="top">
       <img src="visualizations/full_iteration_drawing.jpg" width="525">
     </td>
   </tr>
