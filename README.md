@@ -12,17 +12,27 @@ Time evolves in discrete steps. At each time step, every vehicle updates its sta
 
 ## Implementation
 ### Single lane implementation:
-First we implement a model for single lane traffic as our baselilne/starting point.  The road is represented by a 1D-array where each position represents a “cell” or location in which a car could occupy.
-We then randomly place several cars into the cells and each cell is assigned a numerical value: 
+First, we implement a single-lane traffic model as our baseline. The road is represented by a 1D array where each position corresponds to a “cell” a car may occupy. We randomly place several cars into these cells, assigning each cell a value:
 - $v = -1$     → cell is empty, no car occupies that cell
 - $v = 0-5$     → cell is occupied by a car with velocity $0-5$
 
-With these as the inititail conditions, we iterate over various time steps and the simulation evovles according to the following rules for car motion, including acceleration, slowing down, and randomization. 
-******reword the following — from wikipedia*****
-1. Car motion: Finally, all cars are moved forward the number of cells equal to their velocity. For example, if the velocity is $v = 3$, the car is moved forward $3$ cells.
-2. Acceleration: All cars not at the maximum velocity have their velocity increased by one unit. For example, if the velocity is $v = 4$ it is increased to $5$.
-3. Slowing down: All cars are checked to see if the distance between it and the car in front (in units of cells) is smaller than its current velocity (which has units of cells per time step). If the distance is smaller than the velocity, the velocity is reduced to the number of empty cells in front of the car – to avoid a collision. For example, if the velocity of a car is now 5, but there are only 3 free cells in front of it, with the fourth cell occupied by another car, the car velocity is reduced to 3.
-4. Randomization: The speed of all cars that have a velocity of at least 1, is now reduced by one unit with a probability of p. For example, if $p = 0.5$, then if the velocity is 4, it is reduced to 3 50% of the time.
+Starting from these initial conditions, we update the system over discrete time steps. During each update, the model applies a sequence of rules—acceleration, braking, random slowing, and movement—which define how traffic evolves.
+1. Acceleration: Any car not already at the maximum speed increases its velocity by 1.
+2. Slowing down: Each car checks the number of empty cells ahead. If this distance is smaller than its current velocity, the velocity is reduced to match the available space and avoid collision.
+3. Randomization: With probability $p$ any car with $v$ ≥1 decreases its velocity by 1 to model random driver behavior.
+4. Motion: Finally, each car advances forward a number of cells equal to its (possibly adjusted) velocity.
+
+Below is a visualization of one full update of the single-lane model. Each iteration consists of steps A–E: 
+(A) cars start with their initial velocities; 
+
+(B) each car accelerates; 
+
+(C) cars reduce speed if the space ahead is limited; 
+
+(D) cars may randomly slow down; 
+
+(E) cars move forward according to their final velocity.
+
 
 <p align="center">
   <img src="visualizations/full_iteration_drawing.jpg" width="450" />
