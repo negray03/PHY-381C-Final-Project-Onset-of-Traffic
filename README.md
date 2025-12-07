@@ -125,7 +125,7 @@ Using the Nagel–Schreckenberg model and our multi-lane extension, we were able
 - Explore optimized or adaptive initial conditions for each car
 
 ## Authors and Acknowledgments
-This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. 
+This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme.
 
 ## Resources:
 https://www.mdpi.com/1424-8220/24/23/7672
