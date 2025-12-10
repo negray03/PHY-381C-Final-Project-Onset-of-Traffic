@@ -2,7 +2,7 @@
 #### Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner
 
 ## Introduction 
-Traffic flow is a classic example of a complex system in which simple local rules lead to rich global behavior. Even when all drivers behaves “normally,” large-scale stop-and-go waves can appear. Studying these emergent traffic patterns can help us understand congestion, optimize road design, and test ideas about self-organization in dynamical systems.
+Traffic flow is a classic example of a complex system in which simple local rules lead to rich global behavior. Even when all drivers behave “normally,” large-scale stop-and-go waves can appear. Studying these emergent traffic patterns can help us understand congestion, optimize road design, and test ideas about self-organization in dynamical systems.
 
 The Nagel–Schreckenberg (NS) model is a cellular-automaton framework used to simulate freeway traffic dynamics. It captures how traffic jams emerge as a collective phenomenon: when vehicle density increases, interactions between neighboring cars naturally lead to reduced speeds and stop-and-go patterns.
 
