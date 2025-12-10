@@ -107,6 +107,7 @@ We simulated cells over 1000 iterations while varying the density and lane amoun
 <p align="center">
   <img src="visualizations/Graphs/Density&Lane_Statistics/2D stats, sim time 1000, tolerance e-1.png" width="650" />
   <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 1000, tolerance e-1.png" width="650" />
+  <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 1000, err 0.5e-3.png" width="650" />
 </p>
 
 The plots above, along with the corresponding plots for 100 iterations can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder. 
