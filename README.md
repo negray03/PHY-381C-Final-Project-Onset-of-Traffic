@@ -6,33 +6,33 @@ Traffic flow is a classic example of a complex system in which simple local rule
 
 The Nagel–Schreckenberg (NS) model is a cellular-automaton framework used to simulate freeway traffic dynamics. It captures how traffic jams emerge as a collective phenomenon: when vehicle density increases, interactions between neighboring cars naturally lead to reduced speeds and stop-and-go patterns.
 
-Taking inspiration from the NS model, in this project we implement a simple cellular authomaton model to simulate the onset of traffic, extending it to include lane-changing behavior in a multi-lane roadway. The roadway is represented as a discrete grid with periodic boundary conditions, where each cell is either empty or occupied by a single car with an associated velocity  $v$. Because only one vehicle can occupy a cell at a time, local interactions determine how cars accelerate, brake, or shift lanes.
+Taking inspiration from the NS model, in this project we implement a simple cellular automaton model to simulate the onset of traffic, extending it to include lane-changing behavior in a multi-lane roadway. The roadway is represented as a discrete grid with periodic boundary conditions, where each cell is either empty or occupied by a single car with an associated velocity  $v$. Because only one vehicle can occupy a cell at a time, local interactions determine how cars accelerate, brake, or shift lanes.
 
-Time evolves in discrete steps. At each time step, every vehicle updates its state according to the model rules: it may advance forward, change lanes (in the multi-lane case), adjust its speed, or become part of a traffic jam depending on its surroundings.
+In this system, time evolves in discrete steps. At each time step, every vehicle updates its state according to the model rules: it may advance forward, change lanes (in the multi-lane case), adjust its speed, or become part of a traffic jam depending on its surroundings.
 
 ## Implementation
 ### Single lane implementation:
-First, we implement a single-lane traffic model as our baseline. The road is represented by a 1D array where each position corresponds to a “cell” a car may occupy. We randomly place several cars into these cells, assigning each cell a value:
-- $v = -1$     → cell is empty, no car occupies that cell
-- $v = 0-5$     → cell is occupied by a car with velocity $0-5$
+First, we implement a single lane traffic model as our baseline. The road is represented by a 1D array where each position corresponds to a “cell” one car may occupy. We randomly place several cars into these cells, assigning each cell a value:
+- $v = -1$     → cell is empty, no car occupies that cell.
+- $v = 0-5$     → cell is occupied by a car with velocity $0-5$.
 
-Starting from these initial conditions, we update the system over discrete time steps. During each update, the model applies a sequence of rules—acceleration, braking, random slowing, and movement—which define how traffic evolves.
+Starting from these initial conditions, we update the system over discrete time steps. During each update, the model applies a sequence of rules - acceleration, braking, random slowing, and movement - which define how traffic evolves.
 1. Acceleration: Any car not already at the maximum speed increases its velocity by 1.
 2. Slowing down: Each car checks the number of empty cells ahead. If this distance is smaller than its current velocity, the velocity is reduced to match the available space and avoid collision.
-3. Randomization: With probability $p$ any car with $v$ ≥1 decreases its velocity by 1 to model random driver behavior.
+3. Randomization: With probability $p$ any car with $v$ > 0 decreases its velocity by 1 to model random driver behavior.
 4. Motion: Finally, each car advances forward a number of cells equal to its (possibly adjusted) velocity.
 
-Below is a visualization of one full update of the single-lane model. Each iteration consists of steps A–E: 
+Below is a visualization of one full update of the single lane model. Each iteration consists of steps A–E: 
 
 <table>
   <tr>
     <td width="25%" valign="center" style="padding-right: 25px;">
       <div style="line-height: 2.0;">
-        <p><b>(A)</b> cars start with their initial velocities </p>
-        <p><b>(B)</b> each car accelerates $v$ → $v+1$ </p>
-        <p><b>(C)</b> cars reduce speed if the space ahead is limited </p>
-        <p><b>(D)</b> cars may randomly slow down (here the green car slows down $v$ → $v-1$) </p>
-        <p><b>(E)</b> cars move forward according to their final velocity </p>
+        <p><b>(A)</b> cars start with their initial velocities. </p>
+        <p><b>(B)</b> each car accelerates $v$ → $v+1$ (if $v<5$). </p>
+        <p><b>(C)</b> cars reduce speed if the space ahead is limited. </p>
+        <p><b>(D)</b> cars may randomly slow down (here the green car slows down $v$ → $v-1$). </p>
+        <p><b>(E)</b> cars move forward according to their final velocity. </p>
       </div>
     </td>
     <td width="75%" valign="center">
@@ -46,10 +46,10 @@ Below is a visualization of one full update of the single-lane model. Each itera
 
 
 ### Multiple lane implementation: 
-Next we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves raccording to the following new rules:
-Any car that can not move forwards unimpeded, but has room in an adjacent lane, will be placed in a lane-change queue. 
+Next, we implement a model for multi-lane traffic. Now our road has expanded so that it is created with a 2D-array where, like before, each cell either has a car with some velocity $v = 0-5$, or is empty ($v = -1$). The multiple lanes implementation is essentially made of independent single lanes from before, with the adddition of lane changing. Due to the new interaction of changing lanes, the system now evolves according to the following new rules:
 
-The rules added from the single lane model are that for each queued car: 
+1. Any car that can not move forwards unimpeded, but has room in an adjacent lane, will be placed in a lane-change queue. 
+2. For each queued car, the multi-lane model introduces the following decision rules:
 - Switch to the adjacent lane that lets it travel farther.
 - If both lanes offer the same distance, choose randomly.
 - If neither lane provides an advantage, the car stays in the original lane.
@@ -76,7 +76,7 @@ Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
 ```
 
-With parameters:
+The parameters for each model are: 
 - ```n``` (int) also called ```cells``` (int) in the multi-lane model: Length of the road (number of cells)
 - ```density``` (float): Fraction of cells initially containing cars (0 to 1)
 - ```vmax``` (int): Maximum allowed velocity
