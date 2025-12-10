@@ -84,18 +84,19 @@ With parameters:
 - ```n_step``` (int): Number of iterations you want to simulate
 
 ## Results Visualization
+Here we show some visualizations of our simulations. We show a simulation of the single lane model for 3 cars as well as a simulation for the multi-lane models for 10 and then 30 cars. These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
 
-### Single lane model for 3 cars
+###### Single lane model for 3 cars:
 <p align="center">
   <img src="visualizations/single_lane_simulation.gif" width="750" />
 </p>
 
-### Multi-lane model for 10 cars
+### Multi-lane model for 10 cars:
 <p align="center">
   <img src="visualizations/10 cars in multilanes.gif" width="550" />
 </p>
 
-### Multi-lane model for 80 cars
+### Multi-lane model for 80 cars:
 <p align="center">
   <img src="visualizations/30 cars in multilanes.gif" width="550" />
 </p>
