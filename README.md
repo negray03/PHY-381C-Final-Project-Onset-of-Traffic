@@ -84,7 +84,7 @@ The parameters for each model are:
 - ```n_step``` (int): Number of iterations you want to simulate
 
 ## Results Visualization
-Here we show some visualizations of our simulations. We show a simulation of the single lane model for 3 cars as well as a simulation for the multi-lane models for 10 and then 30 cars. These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
+In this section, we include visualizations of our simulations. We show the single lane model running with 3 cars, as well as multi-lane simulations with 10 and 30 cars. These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
 
 ##### Single lane model for 3 cars:
 <p align="center">
@@ -102,7 +102,7 @@ Here we show some visualizations of our simulations. We show a simulation of the
 </p>
 
 ### Average Flow and Jamming Fraction (2D and 3D)
-We simulated cells over 1000 iterations while varying the density and lane amount. Below we show the 2D (top) and 3D (bottom) average flow. The 3D plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
+We simulated the system for 100 iterations while varying both the grid density and the number of lanes.  The plots below show the resulting average flow in 2D (top row) and 3D (bottom row), along with the corresponding 3D plot of the jamming fraction. 
 
 <p align="center">
   <img src="visualizations/Graphs/Density&Lane_Statistics/2D stats, sim time 100.png" width="650" />
@@ -110,6 +110,7 @@ We simulated cells over 1000 iterations while varying the density and lane amoun
   <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 100, err 0.5e-3.png" width="650" />
 </p>
 
+From the 3D visualizations, we see that the jamming fraction is largely independent of lane count, which is reasonable since jamming is primarily driven by high density rather than lateral movement. In contrast, average flow does increase from additional lanes at low densities, where cars have more opportunities to maneuver around slower traffic. As density increases, however, this advantage diminishes and flow becomes dominated by congestion effects. 
 The plots above, along with the corresponding plots for 1000 iterations can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder. 
 
 ## Conclusion
