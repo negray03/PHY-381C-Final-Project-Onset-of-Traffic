@@ -107,7 +107,6 @@ We simulated the system for 100 iterations while varying both the grid density a
 <p align="center">
   <img src="visualizations/Graphs/Density&Lane_Statistics/2D stats, sim time 100.png" width="650" />
   <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 100 .png" width="650" />
-  <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 100, err 0.5e-3.png" width="650" />
 </p>
 
 From the 3D visualizations, we see that the jamming fraction is largely independent of lane count, which is reasonable since jamming is primarily driven by high density rather than lateral movement. In contrast, average flow does increase from additional lanes at low densities, where cars have more opportunities to maneuver around slower traffic. As density increases, however, this advantage diminishes and flow becomes dominated by congestion effects. 
