@@ -115,13 +115,13 @@ The plots above, along with the corresponding plots for 1000 iterations can be f
 
 ## Conclusion
 
-Using the Nagel–Schreckenberg model and our multi-lane extension, we were able to reproduce realistic traffic behavior with only simple local rules. The simulations showed expected patterns like free flow at low densities and traffic-jam formation caused by random slowing. Our visualizations made it easy to see these jams develop in real time and highlighted the added complexity introduced by lane changing.
+Using the Nagel–Schreckenberg model and our multi-lane extension, we were able to reproduce traffic behavior with only simple local rules. The simulations showed expected patterns like free flow at low densities and traffic-jam formation caused by random slowing. Our visualizations made it clear that these jams develop in real time and highlighted the added complexity introduced by lane changing.
 
 ### Future Directions
 
-- Extend the model beyond a cellular automaton to a continuous framework
-- Add driver-responsiveness and collision rules
-- Explore optimized or adaptive initial conditions for each car
+- Extend the model beyond a cellular automaton to a continuous framework.
+- Add driver-responsiveness and collision rules.
+- Explore optimized or adaptive initial conditions for each car.
 
 ## Authors and Acknowledgments
 This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme file.
