@@ -87,17 +87,17 @@ With parameters:
 
 ### Single lane model for 3 cars
 <p align="center">
-  <img src="visualizations/single_lane_simulation.gif" width="450" />
+  <img src="visualizations/single_lane_simulation.gif" width="750" />
 </p>
 
 ### Multi-lane model for 10 cars
 <p align="center">
-  <img src="visualizations/10 cars in multilanes.gif" width="450" />
+  <img src="visualizations/10 cars in multilanes.gif" width="550" />
 </p>
 
 ### Multi-lane model for 80 cars
 <p align="center">
-  <img src="visualizations/30 cars in multilanes.gif" width="450" />
+  <img src="visualizations/30 cars in multilanes.gif" width="550" />
 </p>
 
 These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
