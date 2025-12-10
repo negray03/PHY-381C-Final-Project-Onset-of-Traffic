@@ -58,7 +58,6 @@ The rules added from the single lane model are that for each queued car:
 
 1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
 2. Install necessary libraries:
-Requirements: 
   ```
   pip install numpy
   pip install matplotlib
@@ -86,19 +85,19 @@ With parameters:
 
 ## Results Visualization
 
-### Multilane model for 3 cars
+### Single lane model for 3 cars
 <p align="center">
-  <img src="visualizations/traffic_simulation_3cars.gif" width="450" />
+  <img src="visualizations/single_lane_simulation.giff" width="450" />
 </p>
 
-### Multilane model for 10 cars
+### Multi-lane model for 10 cars
 <p align="center">
-  <img src="visualizations/traffic_simulation_10cars.gif" width="450" />
+  <img src="visualizations/10 cars in multilanes.gif" width="450" />
 </p>
 
-### Multilane model for 80 cars
+### Multi-lane model for 80 cars
 <p align="center">
-  <img src="visualizations/traffic_simulation_80cars.gif" width="450" />
+  <img src="visualizations/30 cars in multilanes.gif" width="450" />
 </p>
 
 (created using the ___ notebook.)
