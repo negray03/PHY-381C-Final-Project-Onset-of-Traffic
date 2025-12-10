@@ -86,22 +86,20 @@ With parameters:
 ## Results Visualization
 Here we show some visualizations of our simulations. We show a simulation of the single lane model for 3 cars as well as a simulation for the multi-lane models for 10 and then 30 cars. These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
 
-###### Single lane model for 3 cars:
+##### Single lane model for 3 cars:
 <p align="center">
   <img src="visualizations/single_lane_simulation.gif" width="750" />
 </p>
 
-### Multi-lane model for 10 cars:
+##### Multi-lane model for 10 cars:
 <p align="center">
   <img src="visualizations/10 cars in multilanes.gif" width="550" />
 </p>
 
-### Multi-lane model for 80 cars:
+##### Multi-lane model for 80 cars:
 <p align="center">
   <img src="visualizations/30 cars in multilanes.gif" width="550" />
 </p>
-
-These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
 
 ### Average Flow and Jamming Fraction (2D and 3D)
 We simulated cells over 1000 iterations while varying the density and lane amount. Below we show the 2D (top) and 3D (bottom) average flow. The 3D plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
