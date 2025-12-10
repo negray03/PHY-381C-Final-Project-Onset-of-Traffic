@@ -56,22 +56,22 @@ The rules added from the single lane model are that for each queued car:
   
 ## Installation and Basic Usage
 
-Requirements: 
-```
-pip install numpy
-pip install matplotlib
-```
-
 1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
-2. Run models inside the ```Lanes.ipynb``` notebook:
+2. Install necessary libraries:
+Requirements: 
+  ```
+  pip install numpy
+  pip install matplotlib
+  ```
+3. Run models inside the ```Lanes.ipynb``` notebook:
 
-Running the single lane model:
+Run the single lane model:
 ```
 model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
      
-Running the multi-lane lane model:
+Run the multi-lane lane model:
 ```
 Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
@@ -125,7 +125,7 @@ Using the Nagel–Schreckenberg model and our multi-lane extension, we were able
 - Explore optimized or adaptive initial conditions for each car
 
 ## Authors and Acknowledgments
-This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme.
+This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme file.
 
 ## Resources:
 https://www.mdpi.com/1424-8220/24/23/7672
