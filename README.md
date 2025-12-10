@@ -93,12 +93,12 @@ Here we show some visualizations of our simulations. We show a simulation of the
 
 ##### Multi-lane model for 10 cars:
 <p align="center">
-  <img src="visualizations/10 cars in multilanes.gif" width="550" />
+  <img src="visualizations/10 cars in multilanes.gif" width="650" />
 </p>
 
 ##### Multi-lane model for 80 cars:
 <p align="center">
-  <img src="visualizations/30 cars in multilanes.gif" width="550" />
+  <img src="visualizations/30 cars in multilanes.gif" width="650" />
 </p>
 
 ### Average Flow and Jamming Fraction (2D and 3D)
