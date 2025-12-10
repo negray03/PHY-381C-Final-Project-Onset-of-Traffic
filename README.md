@@ -127,12 +127,16 @@ Using the Nagel–Schreckenberg model and our multi-lane extension, we were able
 This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme file.
 
 ## Resources:
-1. https://www.mdpi.com/1424-8220/24/23/7672
+1. Bao, S.; Shi, W.; Zhang, N.; Wang, Y. Onset of Traffic Congestion Detection Using Vehicle Trajectory Data and Sensor Fusion. Sensors 24, no. 23 (2024): 7672.
+  https://www.mdpi.com/1424-8220/24/23/7672
 
-2. https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
+2. Nagel, K.; Schreckenberg, M. Traffic and the Nagel–Schreckenberg Model. Wikipedia, accessed 2025.
+  https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
 
-3. https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
+3. Nagel, K.; Schreckenberg, M. A Cellular Automaton Model for Freeway Traffic. Journal de Physique I 2, no. 12 (1992): 2221–2229.
+  https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
 
-4. https://github.com/christiancosgrove/traffic-numpy
+4. Cosgrove, C. traffic-numpy: A NumPy-based Traffic Simulation Implementation. GitHub Repository, 2018.
+  https://github.com/christiancosgrove/traffic-numpy
 
 
