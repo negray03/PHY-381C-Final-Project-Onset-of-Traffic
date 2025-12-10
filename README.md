@@ -2,7 +2,7 @@
 #### Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner
 
 ## Introduction 
-Traffic flow is a classic example of a complex system in which simple local rules lead to rich global behavior. Even when all drivers behaves “normally,” large-scale stop-and-go waves can appear. Studying these emergent traffic patterns can help us understand congestion, optimize road design, and test ideas about self-organization in dynamical systems.
+Traffic flow is a classic example of a complex system in which simple local rules lead to rich global behavior. Even when all drivers behave “normally,” large-scale stop-and-go waves can appear. Studying these emergent traffic patterns can help us understand congestion, optimize road design, and test ideas about self-organization in dynamical systems.
 
 The Nagel–Schreckenberg (NS) model is a cellular-automaton framework used to simulate freeway traffic dynamics. It captures how traffic jams emerge as a collective phenomenon: when vehicle density increases, interactions between neighboring cars naturally lead to reduced speeds and stop-and-go patterns.
 
@@ -37,7 +37,7 @@ Below is a visualization of one full update of the single-lane model. Each itera
     </td>
     <td width="75%" valign="center">
       <div align="center">
-      <img src="visualizations/full_iteration_drawing.jpg" width="600">
+      <img src="visualizations/Graphs/Traffic_Simulation_Visualizations/full_iteration_drawing.jpg" width="600">
     </td>
   </tr>
 </table>
@@ -56,22 +56,21 @@ The rules added from the single lane model are that for each queued car:
   
 ## Installation and Basic Usage
 
-Requirements: 
-```
-pip install numpy
-pip install matplotlib
-```
-
 1. Clone repository: ```git clone https://github.com/negray03/PHY-381C-Final-Project-Onset-of-Traffic/tree/main ```
-2. Run models inside the ```Lanes.ipynb``` notebook:
+2. Install necessary libraries:
+  ```
+  pip install numpy
+  pip install matplotlib
+  ```
+3. Run models inside the ```Lanes.ipynb``` notebook:
 
-Running the single lane model:
+Run the single lane model:
 ```
 model = Traffic(n, density, vmax, p)
 model.simulate(n_step)
 ```
      
-Running the multi-lane lane model:
+Run the multi-lane lane model:
 ```
 Model = Multi_Lane_Traffic(cells, lanes, density, vmax, p, random_state)
 Model.simulate(n_step)
@@ -85,34 +84,33 @@ With parameters:
 - ```n_step``` (int): Number of iterations you want to simulate
 
 ## Results Visualization
+Here we show some visualizations of our simulations. We show a simulation of the single lane model for 3 cars as well as a simulation for the multi-lane models for 10 and then 30 cars. These visualizatoins can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder.
 
-### Multilane model for 3 cars
+##### Single lane model for 3 cars:
 <p align="center">
-  <img src="visualizations/traffic_simulation_3cars.gif" width="450" />
+  <img src="visualizations/single_lane_simulation.gif" width="750" />
 </p>
 
-### Multilane model for 10 cars
+##### Multi-lane model for 10 cars:
 <p align="center">
-  <img src="visualizations/traffic_simulation_10cars.gif" width="450" />
+  <img src="visualizations/10 cars in multilanes.gif" width="650" />
 </p>
 
-### Multilane model for 80 cars
+##### Multi-lane model for 80 cars:
 <p align="center">
-  <img src="visualizations/traffic_simulation_80cars.gif" width="450" />
+  <img src="visualizations/30 cars in multilanes.gif" width="650" />
 </p>
-
-(created using the ___ notebook.)
 
 ### Average Flow and Jamming Fraction (2D and 3D)
-We simulated cells over 100 iterations while varying the density and lane amount. Below we show the 2D (left) and 3D (right) average flow The 3d plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
+We simulated cells over 1000 iterations while varying the density and lane amount. Below we show the 2D (top) and 3D (bottom) average flow. The 3D plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
 
 <p align="center">
-  <img src="visualizations/Average and Flow 2D vs density and lanes (final).png" width="450" />
-  <img src="visualizations/Average and Flow 3D vs density and lanes (final).png" width="450" />
+  <img src="visualizations/Graphs/Density&Lane_Statistics/2D stats, sim time 100.png" width="650" />
+  <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 100 .png" width="650" />
+  <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 100, err 0.5e-3.png" width="650" />
 </p>
 
-(created using the ___ notebook.)
-
+The plots above, along with the corresponding plots for 1000 iterations can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder. 
 
 ## Conclusion
 
@@ -125,12 +123,15 @@ Using the Nagel–Schreckenberg model and our multi-lane extension, we were able
 - Explore optimized or adaptive initial conditions for each car
 
 ## Authors and Acknowledgments
-This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme.
+This project was completed by Natalie Gray, Meredith Pritchard, Judah Byars, Inhyeok Cho, and Emma Horner. We want to acknowledge and thank Professor William Gilpin and Carson McVay as well. Natalie made the project proposal, basic lane implementation, and presented. Meredith made the presentation, helped with the visualizations, and presented. Judah did the multi lane implementation, the results, and presented. Ian helped with the visualizations and presented. Emma made the Readme file.
 
 ## Resources:
-https://www.mdpi.com/1424-8220/24/23/7672
-https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
-https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
-https://github.com/christiancosgrove/traffic-numpy
+1. https://www.mdpi.com/1424-8220/24/23/7672
+
+2. https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model
+
+3. https://jp1.journaldephysique.org/articles/jp1/abs/1992/12/jp1v2p2221/jp1v2p2221.html
+
+4. https://github.com/christiancosgrove/traffic-numpy
 
 
