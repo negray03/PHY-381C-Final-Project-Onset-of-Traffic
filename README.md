@@ -105,12 +105,12 @@ Here we show some visualizations of our simulations. We show a simulation of the
 We simulated cells over 1000 iterations while varying the density and lane amount. Below we show the 2D (top) and 3D (bottom) average flow. The 3D plots give both the average flow and jamming feaction as the z axis. The jamming percent seemed to ignore the amount of lanes, which makes sense. However, we noticed that for low densities an increase to the amount of lanes did tend to increase the average flow rate.
 
 <p align="center">
-  <img src="visualizations/Graphs/Density&Lane_Statistics/2D stats, sim time 1000, tolerance e-1.png" width="650" />
-  <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 1000, tolerance e-1.png" width="650" />
-  <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 1000, err 0.5e-3.png" width="650" />
+  <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 100 .png" width="650" />
+  <img src="visualizations/Graphs/Density&Lane_Statistics/3D stats, sim time 100 .png" width="650" />
+  <img src="visualizations/Graphs/Specific_Lane_Count_Statistics/single lane, sim time 100, err 0.5e-3.png" width="650" />
 </p>
 
-The plots above, along with the corresponding plots for 100 iterations can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder. 
+The plots above, along with the corresponding plots for 1000 iterations can be found in the ```visualizations/Graphs/Density&Lane_Statistic``` folder. 
 
 ## Conclusion
 
